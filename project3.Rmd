@@ -27,7 +27,7 @@ str(pf)
 summary(pf)
 
 # Histogram of quality
-ggplot(aes(x = as.factor(quality)), data = pf) + geom_histogram()
+ggplot(aes(x = as.factor(quality)), data = pf) + geom_bar()
 dim(subset(pf, quality == 5 | quality == 6))
 dim(subset(pf, quality == 3 | quality == 4))
 dim(subset(pf, quality == 7 | quality == 8))
@@ -421,7 +421,7 @@ From the forth plot, it turns out that pH has very little impact on wine quality
 
 ### Plot One
 ```{r echo=FALSE, Plot_One, warning=FALSE, message=FALSE}
-ggplot(aes(x = as.factor(quality)), data = pf) + geom_histogram() +
+ggplot(aes(x = as.factor(quality)), data = pf) + geom_bar() +
         ggtitle("Histogram of wine quality") +
         xlab("Wine quality") +
         ylab("Count")
