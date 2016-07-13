@@ -143,7 +143,7 @@ Therefore, we define four major features here:
 4. alcohol
 
 
-Two other featurs also have high correlation coefficients:
+Two other features also have high correlation coefficients:
 
 5. density
 
